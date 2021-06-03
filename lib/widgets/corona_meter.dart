@@ -24,7 +24,7 @@ class FetchData{
   Future getData() async{
     final url = 'https://worldometers.p.rapidapi.com/api/coronavirus/world';
     http.Response response = await http.get(Uri.parse(url), headers: {
-      "x-rapidapi-key": "c5661785b0mshb93d5e511ef7a09p1b1e59jsn85754919cb50",
+      "x-rapidapi-key": "c5661785b0mshb93d5e511ef7a01b1e59jsn85754919cb50",
     });
     return jsonDecode(response.body);
   }
@@ -32,7 +32,7 @@ class FetchData{
   Future getDatas(String country) async{
     final url = 'https://worldometers.p.rapidapi.com/api/coronavirus/country/$country';
     http.Response response = await http.get(Uri.parse(url), headers: {
-      "x-rapidapi-key": "c5661785b0mshb93d5e511ef7a09p1b1e59jsn85754919cb50",
+      "x-rapidapi-key": "c5661785b0mshb93d5e511ef7a09p1b1e59n85754919cb50",
     });
     return jsonDecode(response.body) ;
   }
